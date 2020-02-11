@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Browsers List</h1>
+<p>{{ browsersList }}</p>
+<ul>
+    {% for key, value in browsersList.items %}
+        <li>{{ forloop.counter}}-{{ key }}{{ value }} </li>
+    {% endfor %}
+</ul>
+{% endblock %}
